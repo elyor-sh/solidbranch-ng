@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="card text-center mb-2">
+    <div class="card-body">
+      <h5 class="card-title">Welcome</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">See transactions</a>
+    </div>
+    <div class="card-footer text-muted text-center">
+      You have {{transactionFacade.transactions.length}} transactions
+    </div>
+  </div>
+  <div
+    *ngIf="sortedItems.length > 0; else empty"
+    class="d-flex flex-wrap justify-content-between mb-1"
+  >
+    <sb-transaction-type
+      *ngFor="let sortedItem of sortedItems"
+      [count]="sortedItem.count"
+      [link]="sortedItem.route.toString()"
+      [type]="sortedItem.type"
+      class="transaction__card"
+    >
+
+    </sb-transaction-type>
+  </div>
+
+  <ng-template #empty>
+    <div>Nothing found!</div>
+  </ng-template>
+</div>
+

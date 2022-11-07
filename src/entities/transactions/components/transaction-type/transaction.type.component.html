@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title transaction__count">{{count}}</h5>
+    <p class="card-text">{{type | titlecase}}</p>
+    <div class="d-flex justify-content-end">
+      <button
+        class="btn btn-primary btn__see-all"
+        (click)="handleNavigate()"
+      >
+        See all
+      </button>
+    </div>
+  </div>
+</div>
