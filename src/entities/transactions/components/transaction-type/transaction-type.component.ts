@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {TransactionType} from "../../model";
+import {TransactionType, TransactionTypeNames} from "../../model";
 import {Router} from "@angular/router";
 
 
@@ -16,7 +16,7 @@ export class TransactionTypeComponent {
   }
 
   @Input()
-  type: TransactionType
+  name: TransactionTypeNames
 
   @Input()
   count: number

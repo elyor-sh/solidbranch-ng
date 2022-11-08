@@ -12,7 +12,7 @@ export class TransactionsTabsComponent implements OnInit{
   public tabs = [
     {name: 'Income', href: '0'},
     {name: 'Outcome', href: '1'},
-    {name: 'Loan', href: '2'},
+    {name: 'Loans', href: '2'},
     {name: 'Investments', href: '3'},
     {name: 'All', href: ''},
   ]

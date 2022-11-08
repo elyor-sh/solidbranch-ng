@@ -1,4 +1,5 @@
 export type TransactionType = 'income' | 'outcome' | 'loan' | 'investment'
+export type TransactionTypeNames = 'Income' | 'Outcome' | 'Loans' | 'Investments'
 
 export type TransactionName = {
   first: string
@@ -22,6 +23,7 @@ export type TransactionFilterItemType = {
   count: number
   items: TransactionModel[]
   type: TransactionType
+  name: TransactionTypeNames
   route: TransactionTabs
 }
 

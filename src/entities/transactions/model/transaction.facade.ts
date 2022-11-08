@@ -12,29 +12,30 @@ export class TransactionFacade {
       count: 0,
       items: [],
       type: 'income',
+      name: 'Income',
       route: 0
     },
     outcome: {
       count: 0,
       items: [],
       type: 'outcome',
+      name: 'Outcome',
       route: 1
-    },
-    investment: {
-      count: 0,
-      items: [],
-      type: 'investment',
-      route: 2
     },
     loan: {
       count: 0,
       items: [],
       type: 'loan',
+      name: 'Loans',
+      route: 2
+    },
+    investment: {
+      count: 0,
+      items: [],
+      type: 'investment',
+      name: 'Investments',
       route: 3
     },
-  }
-
-  constructor() {
   }
 
   public loadTransactions(): void {
@@ -61,7 +62,8 @@ export class TransactionFacade {
           count: filteredTransactions.length,
           items: filteredTransactions,
           type: key,
-          route: this.sorted[key as TransactionType].route
+          route: this.sorted[key as TransactionType].route,
+          name: this.sorted[key as TransactionType].name
         }
       }
     })
