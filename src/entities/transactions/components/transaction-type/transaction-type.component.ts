@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {TransactionType, TransactionTypeNames} from "../../model";
+import {TransactionTypeNames} from "../../model";
 import {Router} from "@angular/router";
 
 
