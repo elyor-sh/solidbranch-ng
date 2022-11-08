@@ -7,7 +7,7 @@ export type TransactionName = {
 
 export type TransactionModel = {
   _id: string
-  amount: string
+  amount: number
   type: TransactionType
   name: TransactionName
   company: string
