@@ -1,0 +1,23 @@
+<div class="mb-2">
+  <div class="container">
+    <div class="mt-2 mb-2">
+      <sb-back-button></sb-back-button>
+    </div>
+    <sb-transactions-tabs></sb-transactions-tabs>
+    <ul class="row transaction__row">
+      <li class="col-sm-6 text-center">
+        Name
+      </li>
+      <li class="col-sm-6 text-center">
+        Acount
+      </li>
+    </ul>
+      <sb-transaction-row
+        *ngFor="let item of filteredTransactions"
+        [transaction]="item"
+        class="row transaction__row"
+      >
+
+      </sb-transaction-row>
+  </div>
+</div>

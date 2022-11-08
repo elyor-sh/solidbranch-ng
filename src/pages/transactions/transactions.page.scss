@@ -1,0 +1,13 @@
+.transaction__row {
+  border-top: 1px solid #c9c9c9;
+  margin-bottom: 0;
+  padding: 10px 0;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #c9c9c9;
+  }
+}

@@ -1,0 +1,17 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li
+    *ngFor="let tab of tabs"
+    class="nav-item"
+  >
+    <a
+      class="nav-link"
+      aria-controls="home"
+      aria-selected="true"
+      [ngClass]="{'active': tab.href === activeTab}"
+      [routerLink]="['/navigator']"
+      [queryParams]="tab.href ? {tab: tab.href} : {}"
+    >
+      {{tab.name}}
+    </a>
+  </li>
+</ul>

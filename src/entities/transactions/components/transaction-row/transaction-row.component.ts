@@ -3,10 +3,10 @@ import {TransactionModel} from "../../model";
 
 
 @Component({
-  selector: 'sb-transaction-card',
-  templateUrl: './transaction-card.component.html'
+  selector: 'sb-transaction-row',
+  templateUrl: './transaction-row.component.html'
 })
-export class TransactionCardComponent {
+export class TransactionRowComponent {
 
   @Input()
   transaction: TransactionModel

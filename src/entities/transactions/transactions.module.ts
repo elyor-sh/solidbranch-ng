@@ -1,12 +1,14 @@
 import {NgModule} from "@angular/core";
-import {TransactionCardComponent, TransactionTypeComponent} from "./components";
+import {TransactionRowComponent, TransactionsTabsComponent, TransactionTypeComponent} from "./components";
 import {CommonModule} from "@angular/common";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
-  declarations: [TransactionCardComponent, TransactionTypeComponent],
+  declarations: [TransactionRowComponent, TransactionTypeComponent, TransactionsTabsComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  exports: [TransactionCardComponent, TransactionTypeComponent],
+  exports: [TransactionRowComponent, TransactionTypeComponent, TransactionsTabsComponent],
 })
 export class TransactionsModule {}
